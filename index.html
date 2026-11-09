@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamila Fryzjer Męski | Chełmek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Kamila <span>Salon Fryzjerski</span></div>
+        
+        <div class="header-right">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#lokalizacja">Gdzie nas znajdziesz</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#opinie">Opinie</a></li>
+                </ul>
+            </nav>
+
+            <!-- Przełącznik trybu ciemnego -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Przełącz motyw">
+                <span id="theme-icon">🌙</span>
+            </button>
+
+            <!-- Przycisk hamburger dla telefonów -->
+            <button class="hamburger" id="hamburger" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- BANER GŁÓWNY -->
+    <section class="baner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/wnetrze.webp');">
+        <div class="baner-content">
+            <h1>Kamila 
+                Salon Fryzjerski Męski 
+                Chełmek</h1>
+            <p>Profesjonalne strzyżenie męskie, przyjazna atmosfera i najwyższa jakość usług.</p>
+            <h3>Zapraszamy!</h3>
+            <div class="baner-buttons">
+                <a href="#lokalizacja" class="btn btn-outline">Kontakt</a>
+                <a href="tel:+48501584380" class="btn btn-primary">Zadzwoń & Umów</a>
+                <a href="#uslugi" class="btn btn-outline">Cennik</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GDZIE NAS ZNAJDZIESZ (DANE + MAPA) -->
+    <section id="lokalizacja" class="location-section">
+        <h2 class="section-title">Gdzie Nas Znajdziesz</h2>
+        
+        <div class="contact-info-card">
+            <div class="info-item">
+                <strong>Adres:</strong>
+                <p>ul. gen. Andersa 2, 32-660 Chełmek</p>
+            </div>
+            <div class="info-item">
+                <strong>Telefon:</strong>
+                <p><a href="tel:+48501584380">(+48) 501 584 380</a></p>
+            </div>
+            <div class="info-item">
+                <strong>Google Maps:</strong>
+                <p style="margin-top: 0.3rem;">
+                    <a href="https://www.google.com/maps/place/Ducastel+Salon+fryzjerski/@50.1009379,19.2630124,19z/data=!4m15!1m8!3m7!1s0x4716ea8fb5bd2583:0xef7020d1b26f3e63!2sgen.+Andersa+2,+32-660+Che%C5%82mek!3b1!8m2!3d50.1010214!4d19.2637752!16s%2Fg%2F11csgs_wzn!3m5!1s0x4716ea8fbb4057dd:0x488894342e6a2b26!8m2!3d50.1009894!4d19.2633455!16s%2Fg%2F1tdgt3y6?entry=ttu" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="map-link-btn">
+                       Sprawdź w Google Maps
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d638.1186717523916!2d19.2631841!3d50.1009727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ea8fbb4057dd%3A0x488894342e6a2b26!2sDucastel+Salon+fryzjerski!5e0!3m2!1spl!2spl!4v1710000000000!5m2!1spl!2spl" 
+                width="100%" 
+                height="420" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- GALERIA (3 + 2) -->
+    <section id="galeria" class="featured-gallery">
+        <h2 class="section-title">Wnętrze i Atmosfera Salonu</h2>
+        
+        <div class="gallery-grid top-grid">
+            <div class="gallery-item">
+                <img src="assets/zewnatrz.webp" alt="Nasz Salon">
+                <div class="overlay"><h3>Nasz Salon</h3></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/kosmetyki.webp" alt="Profesjonalny Sprzęt">
+                <div class="overlay"><h3>Profesjonalny Sprzęt</h3></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/wnetrze.webp" alt="Komfortowe Wnętrze">
+                <div class="overlay"><h3>Komfortowe Wnętrze</h3></div>
+            </div>
+        </div>
+
+        <div class="gallery-grid bottom-grid">
+            <div class="gallery-item">
+                <img src="assets/fryzura1.webp" alt="Fryzura 1">
+                <div class="overlay"><h3>Fryzura na długo...</h3></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/fryzura2.webp" alt="Fryzura 2">
+                <div class="overlay"><h3>... i na krótko</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CENNIK -->
+    <section id="uslugi" class="services-section">
+        <h2 class="section-title">Usługi i Cennik</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Strzyżenie Męskie</h3>
+                <p></p>
+                <div class="price">od 50 zł</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA OPINII -->
+    <section id="opinie" class="reviews-section">
+        <h2 class="section-title">Opinie Naszych Klientów</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Miłe panie, super atmosfera oraz w pełni zadawalające efekty strzyżenia, polecam."</p>
+                <div class="review-author">- Kamil R.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Świetne strzyżenie męskie, bardzo dokładne. Świetny klimat w salonie i przystępne ceny."</p>
+                <div class="review-author">- Stanisław W.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Bardzo polecam, profesjonalne podejście, najlepszy fryzjer w Chełmku."</p>
+                <div class="review-author">- Tadeusz S.</div>
+            </div>
+        </div>
+
+        <div class="reviews-btn-container">
+            <a href="https://www.google.com/maps/place/Ducastel+Salon+fryzjerski/@50.1009379,19.2630124,19z/data=!4m15!1m8!3m7!1s0x4716ea8fb5bd2583:0xef7020d1b26f3e63!2sgen.+Andersa+2,+32-660+Che%C5%82mek!3b1!8m2!3d50.1010214!4d19.2637752!16s%2Fg%2F11csgs_wzn!3m5!1s0x4716ea8fbb4057dd:0x488894342e6a2b26!8m2!3d50.1009894!4d19.2633455!16s%2Fg%2F1tdgt3y6?entry=ttu" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary google-reviews-btn">
+               Zobacz więcej opinii w Google
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
